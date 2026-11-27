@@ -165,15 +165,33 @@ namespace C50_GSat_Basics03
 
             // #endregion
 
-            #region Question 12
-            // Question 12: Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
-            //to print each book with its position number, like 1.Clean Code.
+            //#region Question 12
+            //// Question 12: Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
+            ////to print each book with its position number, like 1.Clean Code.
+
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    Console.WriteLine("{0}. {1}", i + 1, books[i]);
+            //}
+
+            //#endregion
+
+            #region Question 13
+
+
+            //Question 13: Using the same books array, use a while loop to print every book title.
 
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            for (int i = 0; i < books.Length; i++)
+
+            int i = 0;
+            while (i < books.Length)
             {
-                Console.WriteLine("{0}. {1}", i + 1, books[i]);
+                Console.WriteLine(books[i]);
+                i++;
             }
+            
+
 
             #endregion
 
