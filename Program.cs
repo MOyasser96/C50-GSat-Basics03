@@ -111,21 +111,43 @@ namespace C50_GSat_Basics03
             //}
             //#endregion
 
-            #region Question 9
+            //#region Question 9
 
-            //Question 9: Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is
-            //greater than 300 and isAvailable is true.Use the && operator
+            ////Question 9: Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is
+            ////greater than 300 and isAvailable is true.Use the && operator
 
-            int pages = 464;
-            bool isAvailable = true;
-            if (pages > 300 && isAvailable)
+            //int pages = 464;
+            //bool isAvailable = true;
+            //if (pages > 300 && isAvailable)
+            //{
+            //    Console.WriteLine("You can borrow this book");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You cannot borrow this book");
+            //}
+
+            //#endregion
+
+            #region Question 10
+
+            ////Question 10: Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is
+            //"Clean Code", "Nice pick!" if it's "Refactoring", and "Never heard of it" for anything else.
+
+            string title = "Refactoring";
+            switch (title)
             {
-                Console.WriteLine("You can borrow this book");
+                case "Clean Code":
+                    Console.WriteLine("Great choice!");
+                    break;
+                case "Refactoring":
+                    Console.WriteLine("Nice pick!");
+                    break;
+                default:
+                    Console.WriteLine("Never heard of it");
+                    break;
             }
-            else
-            {
-                Console.WriteLine("You cannot borrow this book");
-            }
+
 
             #endregion
 
