@@ -71,14 +71,26 @@ namespace C50_GSat_Basics03
 
             //#endregion
 
-            #region Question 6
-            //Question 6: Build the same sentence as above, but using string interpolation ($"...").
+            //#region Question 6
+            ////Question 6: Build the same sentence as above, but using string interpolation ($"...").
+
+            //string title = "Clean Code";
+            //int pages = 464;
+            //var sentence = $"Book: {title}, Pages: {pages}";
+
+            //Console.WriteLine(sentence);
+
+            //#endregion
+
+            #region Question 7
+
+            //Question 7: Build the same sentence again, but using string.Format().
 
             string title = "Clean Code";
             int pages = 464;
-            var sentence = $"Book: {title}, Pages: {pages}";
 
-            Console.WriteLine(sentence);
+            Console.WriteLine(string.Format("Book: {0}, Pages: {1}", title, pages));
+
 
             #endregion
 
