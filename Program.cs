@@ -30,18 +30,30 @@ namespace C50_GSat_Basics03
 
             //#endregion
 
-            #region Question 3
-            ////Question 3: Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
-            //object.Print the final result.
+            //#region Question 3
+            //////Question 3: Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
+            ////object.Print the final result.
+
+            //StringBuilder sb = new StringBuilder();
+
+            //sb.Append("Book List");
+            //sb.Append(" - Updated");
+
+            //Console.WriteLine($"Final Result: {sb}");
+
+
+
+            //#endregion
+
+            #region Question 4
+            ////Question 4: Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
+            //Print the result.
 
             StringBuilder sb = new StringBuilder();
 
             sb.Append("Book List");
-            sb.Append(" - Updated");
-
-            Console.WriteLine($"Final Result: {sb}");
-
-
+            sb.Replace("Book List", "Library");
+            Console.WriteLine($"Result: {sb}");
 
             #endregion
         }
