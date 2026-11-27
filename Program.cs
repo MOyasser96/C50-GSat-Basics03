@@ -57,19 +57,38 @@ namespace C50_GSat_Basics03
 
             //#endregion
 
-            #region Question 5
+            //#region Question 5
 
-            //Question 5: Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
-            //Pages: 464" using the + operator.
+            ////Question 5: Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
+            ////Pages: 464" using the + operator.
 
-            string title = "Clean Code";
+            //string title = "Clean Code";
+            //int pages = 464;
+            //string sentence = "Book: " + title + ", Pages: " + pages;
+
+            //Console.WriteLine(sentence);
+            //#endregion
+
+
+            #region Question 6
+
+            //Question 6: Build the same sentence as above, but using string interpolation ($"...").
+
+            string title = "Clean Code";        
             int pages = 464;
-            string sentence = "Book: " + title + ", Pages: " + pages;
+            Console.WriteLine($"Book: {title}, Pages: {pages}");
 
-            Console.WriteLine(sentence);
-
+            
 
             #endregion
+
+
+
+
+
+
+
+
         }
     }
 }
