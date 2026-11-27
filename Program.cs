@@ -224,22 +224,37 @@ namespace C50_GSat_Basics03
 
             //#endregion
 
-            #region Question 16 
+            //#region Question 16 
 
-            ////Question 16: Using the same books array, loop through it and print each title, but stop completely (break) once
-            //you reach "Refactoring".
-            string[] strings = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //////Question 16: Using the same books array, loop through it and print each title, but stop completely (break) once
+            ////you reach "Refactoring".
+            //string[] strings = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
-            foreach (string book in strings)
+            //foreach (string book in strings)
+            //{
+            //    if (book == "Refactoring")
+            //    {
+            //        break;
+            //    }
+            //    Console.WriteLine(book);
+            //}
+            //#endregion
+
+            #region Question 17
+            //Question 17: Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
+           // continue, don't stop the loop).
+
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+            for (int i = 0; i < books.Length; i++)
             {
-                if (book == "Refactoring")
+                if (books[i] == "The Pragmatic Programmer")
                 {
-                    break;
+                    continue;
                 }
-                Console.WriteLine(book);
+                Console.WriteLine(books[i]);
             }
             #endregion
-
         }
     }
 }
