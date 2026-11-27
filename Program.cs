@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 
 namespace C50_GSat_Basics03
@@ -240,20 +241,38 @@ namespace C50_GSat_Basics03
             //}
             //#endregion
 
-            #region Question 17
-            //Question 17: Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
-           // continue, don't stop the loop).
+            // #region Question 17
+            // //Question 17: Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
+            //// continue, don't stop the loop).
+
+            // string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+            // for (int i = 0; i < books.Length; i++)
+            // {
+            //     if (books[i] == "The Pragmatic Programmer")
+            //     {
+            //         continue;
+            //     }
+            //     Console.WriteLine(books[i]);
+            // }
+            // #endregion
+
+            #region Question 18
+
+            //Question 18: Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,
+            // use return to exit the method early instead of printing anything.
 
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
-            for (int i = 0; i < books.Length; i++)
+            void PrintFirstBook()
             {
-                if (books[i] == "The Pragmatic Programmer")
+                if (books.Length == 0)
                 {
-                    continue;
+                    return;
                 }
-                Console.WriteLine(books[i]);
+                Console.WriteLine(books[0]);
             }
+
             #endregion
         }
     }
